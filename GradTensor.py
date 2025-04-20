@@ -54,7 +54,7 @@ class GradTensor:
         """Matrix multiply two tensors."""
         return _matmul(self, other)
 
-    def sum(self, axis=-1) -> "GradTensor":
+    def sum(self) -> "GradTensor":
         """Sum the tensor along the given axis."""
         return tensor_sum(self)
 
